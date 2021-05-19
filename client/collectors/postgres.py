@@ -4,6 +4,7 @@ import os
 import psycopg2
 import psycopg2.extras
 import time
+import shutil
 import sys
 
 from multiprocessing import Process, Queue
