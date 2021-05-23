@@ -44,7 +44,7 @@ class Kernel(models.Model):
 
 	kernel_id = models.AutoField(primary_key=True)
 	kernel_name = models.CharField(max_length=100, null=False, unique=True)
-	sysctl = ArrayField(models.CharField(max_length=50, null=True, unique=True))
+	sysctl = ArrayField(models.CharField(max_length=50, null=True, unique=True), null=True)
 
 	class Meta:
 		unique_together = ('kernel_name', 'sysctl')
